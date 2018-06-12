@@ -10,7 +10,7 @@ import Foundation
 
 struct Job {
     
-    typealias ThrowableBlock = (AsyncResult) throws -> Any
+    typealias ThrowableBlock = (TaskResult) throws -> Any
     
     static func throwableTask(withThrowableBlock block: @escaping ThrowableBlock) -> Tasker.JobType {
         

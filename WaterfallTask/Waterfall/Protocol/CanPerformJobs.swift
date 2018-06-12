@@ -10,7 +10,7 @@ import Foundation
 
 public protocol Tasker: class {
     
-    typealias JobType = (AsyncResult) throws -> Task
+    typealias JobType = (TaskResult) throws -> Task
     
     /// Adds a task to to be executed.
     ///

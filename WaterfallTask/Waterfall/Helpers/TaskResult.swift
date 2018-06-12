@@ -9,7 +9,7 @@
 import Foundation
 
 /// A wrapper to hold onto the result object
-public struct AsyncResult {
+public struct TaskResult {
     
     public typealias ContinueWithResultsType = (Result<Any>) -> Void
     

@@ -76,7 +76,7 @@ public class Waterfall<T>: Task {
             return
         }
         
-        let result = AsyncResult(currentTask: self,
+        let result = TaskResult(currentTask: self,
                                  userInfo: userInfo) { [weak self] currentTaskResult in
             
             switch currentTaskResult {
