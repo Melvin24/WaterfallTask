@@ -21,7 +21,7 @@ class ViewController: UIViewController {
         task = networkService.fetchSomeJSON { commentsResult in
             switch commentsResult {
             case .success(let comments):
-                _ = comments.map {
+                comments.forEach {
                     print($0.id, ", ")
                 }
             case .failure(let error):
